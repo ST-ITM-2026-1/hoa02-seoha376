@@ -51,8 +51,8 @@ body {
     color: #8fd0bc;
 }
 
-.hero-card h2,
-.content-card h2 {
+.hero-card h1,
+.content-card h1 {
     margin: 0 0 16px;
     font-size: 2rem;
 }
@@ -153,4 +153,60 @@ body {
     .card-grid {
         grid-template-columns: 1fr;
     }
+}
+
+
+
+body.light-theme {
+    background: #f7f3ef !important;
+    color: #2a2a2a;
+}
+
+body.light-theme .page-shell,
+body.light-theme main,
+body.light-theme .hero-card,
+body.light-theme .content-card {
+    background: #f7f3ef !important;
+}
+body.light-theme .site-header {
+    background: #d8a7b1 !important;
+}
+
+body.light-theme .nav-list a {
+    color: #2a2a2a;
+}
+
+body.light-theme .nav-list a.active {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+body.light-theme .info-card {
+    background: #fffafa !important;
+}
+
+body.light-theme .hero-text,
+body.light-theme .section-text {
+    color: #555;
+}
+
+body.light-theme .eyebrow {
+    color: #b07d88;
+}
+
+body.light-theme .contact-form input,
+body.light-theme .contact-form textarea {
+    background: #ffffff;
+    color: #2a2a2a;
+    border: 1px solid #d8a7b1;
+}
+
+body.light-theme .contact-form button {
+    background: #d8a7b1;
+    color: #ffffff;
+}
+
+body.light-theme .site-footer {
+    background: #f0e6e8;
+    color: #555;
 }
