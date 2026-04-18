@@ -157,56 +157,56 @@ body {
 
 
 
-body.light-theme {
+body.pink-theme {
     background: #f7f3ef !important;
     color: #2a2a2a;
 }
 
-body.light-theme .page-shell,
-body.light-theme main,
-body.light-theme .hero-card,
-body.light-theme .content-card {
+body.pink-theme .page-shell,
+body.pink-theme main,
+body.pink-theme .hero-card,
+body.pink-theme .content-card {
     background: #f7f3ef !important;
 }
-body.light-theme .site-header {
+body.pink-theme .site-header {
     background: #d8a7b1 !important;
 }
 
-body.light-theme .nav-list a {
+body.pink-theme .nav-list a {
     color: #2a2a2a;
 }
 
-body.light-theme .nav-list a.active {
+body.pink-theme .nav-list a.active {
     text-decoration: underline;
     color: #ffffff;
 }
 
-body.light-theme .info-card {
+body.pink-theme .info-card {
     background: #fffafa !important;
 }
 
-body.light-theme .hero-text,
-body.light-theme .section-text {
+body.pink-theme .hero-text,
+body.pink-theme .section-text {
     color: #555;
 }
 
-body.light-theme .eyebrow {
+body.pink-theme .eyebrow {
     color: #b07d88;
 }
 
-body.light-theme .contact-form input,
-body.light-theme .contact-form textarea {
+body.pink-theme .contact-form input,
+body.pink-theme .contact-form textarea {
     background: #ffffff;
     color: #2a2a2a;
     border: 1px solid #d8a7b1;
 }
 
-body.light-theme .contact-form button {
+body.pink-theme .contact-form button {
     background: #d8a7b1;
     color: #ffffff;
 }
 
-body.light-theme .site-footer {
+body.pink-theme .site-footer {
     background: #f0e6e8;
     color: #555;
 }
