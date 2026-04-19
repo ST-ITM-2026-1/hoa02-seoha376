@@ -76,3 +76,48 @@ async function fetchGitHubProfile() {
 }
 
 fetchGitHubProfile();
+
+
+
+
+const repoList = document.getElementById("repo-list");
+
+async function fetchGitHubRepos() {
+    if (!repoList) return;
+
+    try {
+        const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated`);
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch repositories.");
+        }
+
+        const repos = await response.json();
+
+        if (repos.length === 0) {
+            repoList.innerHTML = "<p>No public repositories found.</p>";
+            return;
+        }
+
+        repoList.innerHTML = "";
+
+        repos.forEach((repo) => {
+            const repoCard = document.createElement("article");
+            repoCard.className = "info-card repo-card";
+
+            repoCard.innerHTML = `
+                <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                <p>${repo.description || "No description provided."}</p>
+                <p><strong>Language:</strong> ${repo.language || "Not specified"}</p>
+                <p><strong>Stars:</strong> ${repo.stargazers_count}</p>
+                <p><strong>Forks:</strong> ${repo.forks_count}</p>
+            `;
+
+            repoList.appendChild(repoCard);
+        });
+    } catch (error) {
+        repoList.innerHTML = `<p>${error.message}</p>`;
+    }
+}
+
+fetchGitHubRepos();
