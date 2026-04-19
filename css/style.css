@@ -210,3 +210,47 @@ body.pink-theme .site-footer {
     background: #f0e6e8;
     color: #555;
 }
+
+body.pink-theme .filter-btn.active {
+    background: #d8a7b1;
+    color: #1f1f23;
+}
+
+
+
+
+
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.filter-btn {
+    border: none;
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: #2a2a31;
+    color: #f5f7fa;
+}
+
+.filter-btn.active {
+    background: #8fd0bc;
+    color: #1f1f23;
+}
+
+body.light-theme .filter-btn {
+    background: #ffffff;
+    color: #2a2a2a;
+    border: 1px solid #d8a7b1;
+}
+
+body.light-theme .filter-btn.active {
+    background: #d8a7b1;
+    color: #ffffff;
+}
