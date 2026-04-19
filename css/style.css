@@ -157,6 +157,29 @@ body {
 
 
 
+
+
+
+/* div class */
+.header-actions { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+/* button class */
+.theme-toggle {
+    border: none;
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: #2a2a31;
+    color: #f5f7fa;
+}
+
 body.pink-theme {
     background: #f7f3ef !important;
     color: #2a2a2a;
