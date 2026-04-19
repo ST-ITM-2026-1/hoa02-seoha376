@@ -165,7 +165,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin: 24px 0;
+    margin: 10px 0;
 }
 
 /* button class */
@@ -176,7 +176,7 @@ body {
     font-size: 0.95rem;
     font-weight: bold;
     cursor: pointer;
-    background: #2a2a31;
+    background: #3c3c46;
     color: #f5f7fa;
 }
 
@@ -253,7 +253,7 @@ body.pink-theme .filter-btn.active {
 
 .filter-btn {
     border: none;
-    border-radius: 999px;
+    border-radius: 10px;
     padding: 10px 16px;
     font-size: 0.95rem;
     font-weight: bold;
