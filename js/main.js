@@ -43,3 +43,36 @@ if (filterButtons.length > 0 && projectCards.length > 0) {
         });
     });
 }
+
+
+
+const githubProfile = document.getElementById("github-profile");
+const username = "seoha376";
+
+async function fetchGitHubProfile() {
+    if (!githubProfile) return;
+
+    try {
+        const response = await fetch(`https://api.github.com/users/${username}`);
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch GitHub profile.");
+        }
+
+        const data = await response.json();
+
+        githubProfile.innerHTML = `
+            <img src="${data.avatar_url}" alt="${data.login}" class="profile-img">
+            <h3>${data.name || data.login}</h3>
+            <p>${data.bio || "No bio available."}</p>
+            <p><strong>Public Repos:</strong> ${data.public_repos}</p>
+            <p><strong>Followers:</strong> ${data.followers}</p>
+            <p><strong>Following:</strong> ${data.following}</p>
+            <p><a href="${data.html_url}" target="_blank">View GitHub</a></p>
+        `;
+    } catch (error) {
+        githubProfile.innerHTML = `<p>${error.message}</p>`;
+    }
+}
+
+fetchGitHubProfile();
